@@ -13,6 +13,7 @@ import networkx as nx
 import pandas as pd
 
 DATA_PATH = Path(__file__).resolve().parent.parent / "data" / "MC1_graph.json"
+OUTPUT_DIR = Path(__file__).resolve().parent.parent / "output"
 
 
 def load_graph(path: Path = DATA_PATH) -> nx.MultiDiGraph:
@@ -63,6 +64,60 @@ def genre_flow_edges(g: nx.MultiDiGraph, genre_attr: str = "genre") -> pd.DataFr
     return df.groupby(["source_genre", "target_genre"]).size().reset_index(name="count").sort_values("count", ascending=False)
 
 
+def node_table(g: nx.MultiDiGraph) -> pd.DataFrame:
+    """Flat node table - one row per node, every attribute as a column.
+    This is the generic 'throw it in Tableau' export: filter/join on
+    Node Type, genre, release_date, notable, notoriety_date, etc."""
+    rows = []
+    for node_id, attrs in g.nodes(data=True):
+        rows.append({"id": node_id, **attrs})
+    return pd.DataFrame(rows)
+
+
+def edge_table(g: nx.MultiDiGraph) -> pd.DataFrame:
+    """Flat edge table with source/target name + type joined in, so Tableau
+    doesn't need a separate join to the node table for basic filtering."""
+    rows = []
+    for u, v, attrs in g.edges(data=True):
+        u_attrs, v_attrs = g.nodes[u], g.nodes[v]
+        rows.append({
+            "source_id": u,
+            "source_name": u_attrs.get("name"),
+            "source_type": u_attrs.get("Node Type"),
+            "source_genre": u_attrs.get("genre"),
+            "target_id": v,
+            "target_name": v_attrs.get("name"),
+            "target_type": v_attrs.get("Node Type"),
+            "target_genre": v_attrs.get("genre"),
+            "edge_type": attrs.get("Edge Type"),
+        })
+    return pd.DataFrame(rows)
+
+
+def oceanus_folk_by_decade(g: nx.MultiDiGraph, genre: str = "Oceanus Folk") -> pd.DataFrame:
+    """Release count by decade for a given genre - the RQ1b line chart data."""
+    rows = []
+    for _, attrs in g.nodes(data=True):
+        if attrs.get("genre") != genre:
+            continue
+        release_date = attrs.get("release_date")
+        if not release_date:
+            continue
+        year = int(str(release_date)[:4])
+        rows.append({"decade": f"{year // 10 * 10}s"})
+    df = pd.DataFrame(rows)
+    if df.empty:
+        return df
+    return df.groupby("decade").size().reset_index(name="count").sort_values("decade")
+
+
+def export_ego_graphml(g: nx.MultiDiGraph, node_id: int, radius: int, path: Path) -> None:
+    """Gephi (not Tableau) reads GraphML directly - Tableau has no native
+    graph/node-link layout, so the ego-network visual belongs in Gephi."""
+    ego = ego_subgraph(g, node_id, radius=radius)
+    nx.write_graphml(ego, path)
+
+
 def centrality_table(g: nx.MultiDiGraph) -> pd.DataFrame:
     """Degree + betweenness centrality for the RQ2 'bridge ties' metric.
     Betweenness on the full graph is slow - this flattens to a simple
@@ -70,10 +125,13 @@ def centrality_table(g: nx.MultiDiGraph) -> pd.DataFrame:
     flat = nx.DiGraph(g)
     degree = dict(flat.degree())
     betweenness = nx.betweenness_centrality(flat)
+    node_ids = list(degree.keys())
     return pd.DataFrame({
-        "node": list(degree.keys()),
+        "node_id": node_ids,
+        "name": [g.nodes[n].get("name") for n in node_ids],
+        "node_type": [g.nodes[n].get("Node Type") for n in node_ids],
         "degree": list(degree.values()),
-        "betweenness": [betweenness[n] for n in degree.keys()],
+        "betweenness": [betweenness[n] for n in node_ids],
     }).sort_values("degree", ascending=False)
 
 
@@ -83,7 +141,18 @@ if __name__ == "__main__":
     print("\nNode types:\n", node_counts_by_type(g))
     print("\nEdge types:\n", edge_counts_by_type(g))
 
+    OUTPUT_DIR.mkdir(exist_ok=True)
+
+    node_table(g).to_csv(OUTPUT_DIR / "nodes.csv", index=False)
+    edge_table(g).to_csv(OUTPUT_DIR / "edges.csv", index=False)
+    genre_flow_edges(g).to_csv(OUTPUT_DIR / "genre_flow.csv", index=False)
+    oceanus_folk_by_decade(g).to_csv(OUTPUT_DIR / "oceanus_folk_by_decade.csv", index=False)
+    centrality_table(g).to_csv(OUTPUT_DIR / "centrality.csv", index=False)
+    print(f"\nWrote Tableau-ready CSVs to {OUTPUT_DIR}/")
+
     sailor_id = find_node_by_name(g, "Sailor Shift")
     if sailor_id:
         ego = ego_subgraph(g, sailor_id, radius=1)
-        print(f"\nSailor Shift ego network (radius=1): {ego.number_of_nodes()} nodes, {ego.number_of_edges()} edges")
+        print(f"Sailor Shift ego network (radius=1): {ego.number_of_nodes()} nodes, {ego.number_of_edges()} edges")
+        export_ego_graphml(g, sailor_id, radius=1, path=OUTPUT_DIR / "sailor_shift_ego.graphml")
+        print(f"Wrote Gephi-ready {OUTPUT_DIR / 'sailor_shift_ego.graphml'}")

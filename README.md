@@ -50,7 +50,25 @@ code or hands Tableau/Gephi the full 17k-node graph:
 - `centrality_table(g)` — degree + betweenness centrality (RQ2's "bridge
   ties" metric)
 
-Run `python3 scripts/load_graph.py` directly for a quick schema printout.
+Run `python3 scripts/load_graph.py` directly for a schema printout, and it
+also writes everything below to `output/` (gitignored — regenerate locally
+with the same command rather than committing it):
+
+- `nodes.csv` / `edges.csv` — full flat tables, every node/edge attribute as
+  a column, source/target name+type joined into the edge table. The generic
+  **drag-into-Tableau** export — filter by `Node Type`, `genre`,
+  `release_date`, etc. once it's in.
+- `genre_flow.csv` — genre→genre influence-edge counts, direction preserved.
+  Feeds either a Sankey or chord diagram once that decision is made.
+- `oceanus_folk_by_decade.csv` — release counts by decade, for the RQ1b line
+  chart. (Matches the meeting-prep numbers through the 2030s, plus 3 more
+  releases that land in the 2040s that weren't in the original note.)
+- `centrality.csv` — degree + betweenness per node, with name/type joined
+  in, for the RQ2 scatterplot.
+- `sailor_shift_ego.graphml` — Sailor Shift's radius-1 ego network, for
+  **Gephi**, not Tableau — Tableau has no native node-link/graph layout, so
+  the ego-network visual belongs in Gephi (or a from-scratch D3/NetworkX
+  plot), not a Tableau sheet.
 
 ## Open items
 

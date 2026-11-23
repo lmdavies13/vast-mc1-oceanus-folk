@@ -1,0 +1,353 @@
+from_genre,to_genre,n
+Acoustic Folk,Oceanus Folk,2
+Alternative Rock,Avant-Garde Folk,19
+Alternative Rock,Blues Rock,6
+Alternative Rock,Darkwave,1
+Alternative Rock,Desert Rock,2
+Alternative Rock,Doom Metal,4
+Alternative Rock,Dream Pop,51
+Alternative Rock,Emo/Pop Punk,6
+Alternative Rock,Indie Folk,14
+Alternative Rock,Indie Pop,5
+Alternative Rock,Indie Rock,10
+Alternative Rock,Jazz Surf Rock,10
+Alternative Rock,Lo-Fi Electronica,4
+Alternative Rock,Oceanus Folk,8
+Alternative Rock,Post-Apocalyptic Folk,2
+Alternative Rock,Psychedelic Rock,1
+Alternative Rock,Southern Gothic Rock,12
+Alternative Rock,Space Rock,1
+Alternative Rock,Speed Metal,1
+Alternative Rock,Symphonic Metal,1
+Alternative Rock,Synthwave,4
+Americana,Alternative Rock,2
+Americana,Desert Rock,4
+Americana,Doom Metal,8
+Americana,Dream Pop,47
+Americana,Indie Folk,20
+Americana,Indie Rock,6
+Americana,Jazz Surf Rock,6
+Americana,Oceanus Folk,5
+Americana,Post-Apocalyptic Folk,8
+Americana,Psychedelic Rock,6
+Americana,Space Rock,14
+Americana,Symphonic Metal,6
+Americana,Synthpop,1
+Americana,Synthwave,17
+Avant-Garde Folk,Alternative Rock,17
+Avant-Garde Folk,Blues Rock,2
+Avant-Garde Folk,Dream Pop,2
+Avant-Garde Folk,Emo/Pop Punk,9
+Avant-Garde Folk,Indie Pop,22
+Avant-Garde Folk,Indie Rock,2
+Avant-Garde Folk,Lo-Fi Electronica,7
+Avant-Garde Folk,Oceanus Folk,2
+Avant-Garde Folk,Post-Apocalyptic Folk,1
+Avant-Garde Folk,Southern Gothic Rock,21
+Blues Rock,Alternative Rock,19
+Blues Rock,Avant-Garde Folk,9
+Blues Rock,Desert Rock,1
+Blues Rock,Dream Pop,5
+Blues Rock,Emo/Pop Punk,17
+Blues Rock,Indie Folk,1
+Blues Rock,Indie Pop,16
+Blues Rock,Indie Rock,1
+Blues Rock,Lo-Fi Electronica,2
+Blues Rock,Oceanus Folk,4
+Blues Rock,Southern Gothic Rock,29
+Blues Rock,Speed Metal,1
+Blues Rock,Synthwave,2
+Celtic Folk,Doom Metal,1
+Celtic Folk,Oceanus Folk,4
+Darkwave,Alternative Rock,2
+Darkwave,Americana,3
+Darkwave,Desert Rock,4
+Darkwave,Doom Metal,1
+Darkwave,Dream Pop,30
+Darkwave,Indie Folk,4
+Darkwave,Indie Rock,2
+Darkwave,Lo-Fi Electronica,1
+Darkwave,Post-Apocalyptic Folk,10
+Darkwave,Space Rock,7
+Darkwave,Symphonic Metal,2
+Darkwave,Synthpop,1
+Darkwave,Synthwave,8
+Desert Rock,Alternative Rock,1
+Desert Rock,Americana,6
+Desert Rock,Blues Rock,1
+Desert Rock,Darkwave,3
+Desert Rock,Doom Metal,13
+Desert Rock,Dream Pop,19
+Desert Rock,Indie Folk,14
+Desert Rock,Jazz Surf Rock,6
+Desert Rock,Lo-Fi Electronica,1
+Desert Rock,Oceanus Folk,9
+Desert Rock,Post-Apocalyptic Folk,2
+Desert Rock,Psychedelic Rock,5
+Desert Rock,Space Rock,11
+Desert Rock,Synthpop,1
+Desert Rock,Synthwave,14
+Doom Metal,Alternative Rock,5
+Doom Metal,Americana,42
+Doom Metal,Avant-Garde Folk,1
+Doom Metal,Blues Rock,4
+Doom Metal,Darkwave,14
+Doom Metal,Desert Rock,38
+Doom Metal,Dream Pop,70
+Doom Metal,Emo/Pop Punk,1
+Doom Metal,Indie Folk,142
+Doom Metal,Indie Pop,3
+Doom Metal,Indie Rock,50
+Doom Metal,Jazz Surf Rock,21
+Doom Metal,Oceanus Folk,14
+Doom Metal,Post-Apocalyptic Folk,16
+Doom Metal,Psychedelic Rock,11
+Doom Metal,Space Rock,27
+Doom Metal,Symphonic Metal,12
+Doom Metal,Synthpop,7
+Doom Metal,Synthwave,163
+Dream Pop,Alternative Rock,58
+Dream Pop,Americana,23
+Dream Pop,Avant-Garde Folk,2
+Dream Pop,Blues Rock,2
+Dream Pop,Darkwave,22
+Dream Pop,Desert Rock,19
+Dream Pop,Doom Metal,19
+Dream Pop,Emo/Pop Punk,3
+Dream Pop,Indie Folk,64
+Dream Pop,Indie Rock,21
+Dream Pop,Jazz Surf Rock,33
+Dream Pop,Lo-Fi Electronica,5
+Dream Pop,Oceanus Folk,15
+Dream Pop,Post-Apocalyptic Folk,26
+Dream Pop,Psychedelic Rock,28
+Dream Pop,Southern Gothic Rock,3
+Dream Pop,Space Rock,38
+Dream Pop,Speed Metal,1
+Dream Pop,Symphonic Metal,9
+Dream Pop,Synthpop,7
+Dream Pop,Synthwave,80
+Emo/Pop Punk,Alternative Rock,11
+Emo/Pop Punk,Avant-Garde Folk,9
+Emo/Pop Punk,Blues Rock,8
+Emo/Pop Punk,Darkwave,1
+Emo/Pop Punk,Dream Pop,1
+Emo/Pop Punk,Indie Folk,3
+Emo/Pop Punk,Indie Pop,21
+Emo/Pop Punk,Indie Rock,1
+Emo/Pop Punk,Jazz Surf Rock,3
+Emo/Pop Punk,Lo-Fi Electronica,3
+Emo/Pop Punk,Oceanus Folk,1
+Emo/Pop Punk,Southern Gothic Rock,10
+Indie Folk,Alternative Rock,13
+Indie Folk,Americana,33
+Indie Folk,Blues Rock,2
+Indie Folk,Darkwave,9
+Indie Folk,Desert Rock,64
+Indie Folk,Doom Metal,69
+Indie Folk,Dream Pop,109
+Indie Folk,Emo/Pop Punk,1
+Indie Folk,Indie Rock,14
+Indie Folk,Jazz Surf Rock,23
+Indie Folk,Oceanus Folk,100
+Indie Folk,Post-Apocalyptic Folk,8
+Indie Folk,Psychedelic Rock,10
+Indie Folk,Southern Gothic Rock,1
+Indie Folk,Space Rock,28
+Indie Folk,Speed Metal,1
+Indie Folk,Symphonic Metal,11
+Indie Folk,Synthpop,5
+Indie Folk,Synthwave,74
+Indie Pop,Alternative Rock,22
+Indie Pop,Avant-Garde Folk,25
+Indie Pop,Blues Rock,20
+Indie Pop,Darkwave,1
+Indie Pop,Dream Pop,3
+Indie Pop,Emo/Pop Punk,22
+Indie Pop,Indie Folk,1
+Indie Pop,Indie Rock,1
+Indie Pop,Jazz Surf Rock,1
+Indie Pop,Lo-Fi Electronica,7
+Indie Pop,Oceanus Folk,1
+Indie Pop,Psychedelic Rock,1
+Indie Pop,Southern Gothic Rock,122
+Indie Rock,Alternative Rock,9
+Indie Rock,Americana,10
+Indie Rock,Blues Rock,3
+Indie Rock,Darkwave,12
+Indie Rock,Desert Rock,5
+Indie Rock,Doom Metal,45
+Indie Rock,Dream Pop,48
+Indie Rock,Emo/Pop Punk,1
+Indie Rock,Indie Folk,15
+Indie Rock,Indie Pop,1
+Indie Rock,Jazz Surf Rock,4
+Indie Rock,Lo-Fi Electronica,3
+Indie Rock,Oceanus Folk,8
+Indie Rock,Post-Apocalyptic Folk,6
+Indie Rock,Psychedelic Rock,2
+Indie Rock,Space Rock,11
+Indie Rock,Symphonic Metal,1
+Indie Rock,Synthpop,2
+Indie Rock,Synthwave,20
+Jazz Surf Rock,Alternative Rock,12
+Jazz Surf Rock,Americana,2
+Jazz Surf Rock,Avant-Garde Folk,1
+Jazz Surf Rock,Darkwave,1
+Jazz Surf Rock,Desert Rock,5
+Jazz Surf Rock,Doom Metal,4
+Jazz Surf Rock,Dream Pop,16
+Jazz Surf Rock,Emo/Pop Punk,1
+Jazz Surf Rock,Indie Folk,5
+Jazz Surf Rock,Indie Rock,5
+Jazz Surf Rock,Oceanus Folk,1
+Jazz Surf Rock,Post-Apocalyptic Folk,4
+Jazz Surf Rock,Psychedelic Rock,1
+Jazz Surf Rock,Southern Gothic Rock,3
+Jazz Surf Rock,Space Rock,8
+Jazz Surf Rock,Symphonic Metal,2
+Jazz Surf Rock,Synthpop,1
+Jazz Surf Rock,Synthwave,14
+Lo-Fi Electronica,Alternative Rock,9
+Lo-Fi Electronica,Americana,1
+Lo-Fi Electronica,Desert Rock,1
+Lo-Fi Electronica,Dream Pop,3
+Lo-Fi Electronica,Emo/Pop Punk,9
+Lo-Fi Electronica,Indie Pop,3
+Lo-Fi Electronica,Indie Rock,1
+Lo-Fi Electronica,Jazz Surf Rock,2
+Lo-Fi Electronica,Oceanus Folk,1
+Lo-Fi Electronica,Psychedelic Rock,1
+Lo-Fi Electronica,Southern Gothic Rock,2
+Lo-Fi Electronica,Speed Metal,2
+Oceanus Folk,Alternative Rock,5
+Oceanus Folk,Americana,13
+Oceanus Folk,Avant-Garde Folk,2
+Oceanus Folk,Blues Rock,1
+Oceanus Folk,Darkwave,3
+Oceanus Folk,Desert Rock,51
+Oceanus Folk,Doom Metal,8
+Oceanus Folk,Dream Pop,44
+Oceanus Folk,Emo/Pop Punk,3
+Oceanus Folk,Indie Folk,43
+Oceanus Folk,Indie Pop,2
+Oceanus Folk,Indie Rock,5
+Oceanus Folk,Jazz Surf Rock,10
+Oceanus Folk,Lo-Fi Electronica,2
+Oceanus Folk,Post-Apocalyptic Folk,5
+Oceanus Folk,Psychedelic Rock,2
+Oceanus Folk,Southern Gothic Rock,2
+Oceanus Folk,Space Rock,36
+Oceanus Folk,Speed Metal,3
+Oceanus Folk,Symphonic Metal,3
+Oceanus Folk,Synthpop,6
+Oceanus Folk,Synthwave,18
+Post-Apocalyptic Folk,Americana,1
+Post-Apocalyptic Folk,Darkwave,5
+Post-Apocalyptic Folk,Desert Rock,2
+Post-Apocalyptic Folk,Doom Metal,5
+Post-Apocalyptic Folk,Dream Pop,29
+Post-Apocalyptic Folk,Indie Folk,3
+Post-Apocalyptic Folk,Indie Rock,2
+Post-Apocalyptic Folk,Jazz Surf Rock,6
+Post-Apocalyptic Folk,Oceanus Folk,2
+Post-Apocalyptic Folk,Space Rock,13
+Post-Apocalyptic Folk,Symphonic Metal,1
+Post-Apocalyptic Folk,Synthpop,3
+Post-Apocalyptic Folk,Synthwave,10
+Psychedelic Rock,Alternative Rock,3
+Psychedelic Rock,Americana,8
+Psychedelic Rock,Darkwave,3
+Psychedelic Rock,Desert Rock,15
+Psychedelic Rock,Doom Metal,8
+Psychedelic Rock,Dream Pop,106
+Psychedelic Rock,Emo/Pop Punk,1
+Psychedelic Rock,Indie Folk,10
+Psychedelic Rock,Indie Pop,1
+Psychedelic Rock,Indie Rock,17
+Psychedelic Rock,Jazz Surf Rock,7
+Psychedelic Rock,Lo-Fi Electronica,2
+Psychedelic Rock,Oceanus Folk,12
+Psychedelic Rock,Post-Apocalyptic Folk,17
+Psychedelic Rock,Space Rock,11
+Psychedelic Rock,Symphonic Metal,7
+Psychedelic Rock,Synthwave,25
+Sea Shanties,Oceanus Folk,1
+Southern Gothic Rock,Alternative Rock,48
+Southern Gothic Rock,Avant-Garde Folk,48
+Southern Gothic Rock,Blues Rock,42
+Southern Gothic Rock,Dream Pop,12
+Southern Gothic Rock,Emo/Pop Punk,36
+Southern Gothic Rock,Indie Folk,5
+Southern Gothic Rock,Indie Pop,57
+Southern Gothic Rock,Indie Rock,2
+Southern Gothic Rock,Jazz Surf Rock,1
+Southern Gothic Rock,Lo-Fi Electronica,10
+Southern Gothic Rock,Oceanus Folk,4
+Southern Gothic Rock,Post-Apocalyptic Folk,1
+Southern Gothic Rock,Speed Metal,8
+Southern Gothic Rock,Synthpop,1
+Space Rock,Americana,3
+Space Rock,Blues Rock,1
+Space Rock,Darkwave,5
+Space Rock,Desert Rock,3
+Space Rock,Dream Pop,26
+Space Rock,Indie Folk,3
+Space Rock,Indie Pop,1
+Space Rock,Indie Rock,5
+Space Rock,Jazz Surf Rock,8
+Space Rock,Oceanus Folk,4
+Space Rock,Post-Apocalyptic Folk,4
+Space Rock,Symphonic Metal,1
+Space Rock,Synthwave,17
+Speed Metal,Alternative Rock,22
+Speed Metal,Doom Metal,1
+Speed Metal,Dream Pop,1
+Speed Metal,Lo-Fi Electronica,4
+Speed Metal,Southern Gothic Rock,5
+Speed Metal,Synthpop,2
+Symphonic Metal,Alternative Rock,2
+Symphonic Metal,Americana,6
+Symphonic Metal,Blues Rock,1
+Symphonic Metal,Darkwave,4
+Symphonic Metal,Desert Rock,1
+Symphonic Metal,Doom Metal,11
+Symphonic Metal,Dream Pop,10
+Symphonic Metal,Indie Folk,12
+Symphonic Metal,Indie Rock,2
+Symphonic Metal,Jazz Surf Rock,4
+Symphonic Metal,Oceanus Folk,3
+Symphonic Metal,Post-Apocalyptic Folk,1
+Symphonic Metal,Psychedelic Rock,1
+Symphonic Metal,Space Rock,5
+Symphonic Metal,Synthpop,1
+Symphonic Metal,Synthwave,8
+Synthpop,Americana,4
+Synthpop,Avant-Garde Folk,1
+Synthpop,Desert Rock,5
+Synthpop,Doom Metal,3
+Synthpop,Dream Pop,6
+Synthpop,Indie Folk,7
+Synthpop,Indie Rock,1
+Synthpop,Oceanus Folk,10
+Synthpop,Space Rock,6
+Synthpop,Speed Metal,1
+Synthpop,Synthwave,2
+Synthwave,Alternative Rock,22
+Synthwave,Americana,18
+Synthwave,Blues Rock,1
+Synthwave,Darkwave,18
+Synthwave,Desert Rock,18
+Synthwave,Doom Metal,45
+Synthwave,Dream Pop,156
+Synthwave,Emo/Pop Punk,1
+Synthwave,Indie Folk,54
+Synthwave,Indie Rock,32
+Synthwave,Jazz Surf Rock,19
+Synthwave,Lo-Fi Electronica,7
+Synthwave,Oceanus Folk,19
+Synthwave,Post-Apocalyptic Folk,12
+Synthwave,Psychedelic Rock,13
+Synthwave,Space Rock,26
+Synthwave,Symphonic Metal,10
+Synthwave,Synthpop,6

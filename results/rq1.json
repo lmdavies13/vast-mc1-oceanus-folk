@@ -1,0 +1,382 @@
+{
+ "of_by_decade": [
+  {
+   "dec": 1970,
+   "total": 17,
+   "of": 0,
+   "share": 0.0
+  },
+  {
+   "dec": 1980,
+   "total": 117,
+   "of": 0,
+   "share": 0.0
+  },
+  {
+   "dec": 1990,
+   "total": 292,
+   "of": 16,
+   "share": 0.0548
+  },
+  {
+   "dec": 2000,
+   "total": 541,
+   "of": 21,
+   "share": 0.0388
+  },
+  {
+   "dec": 2010,
+   "total": 1203,
+   "of": 58,
+   "share": 0.0482
+  },
+  {
+   "dec": 2020,
+   "total": 2169,
+   "of": 146,
+   "share": 0.0673
+  },
+  {
+   "dec": 2030,
+   "total": 269,
+   "of": 61,
+   "share": 0.2268
+  },
+  {
+   "dec": 2040,
+   "total": 3,
+   "of": 3,
+   "share": 1.0
+  }
+ ],
+ "ss": {
+  "id": 17255,
+  "direct_edges": 60,
+  "direct_neighbors": 51,
+  "edge_types": {
+   "PerformerOf": 26,
+   "LyricistOf": 21,
+   "InStyleOf": 4,
+   "LyricalReferenceTo": 3,
+   "InterpolatesFrom": 2,
+   "DirectlySamples": 2,
+   "MemberOf": 1,
+   "ProducerOf": 1
+  },
+  "groups": [
+   "Ivy Echos"
+  ],
+  "group_members": [
+   "Maya Jensen",
+   "Lila \"Lilly\" Hartman",
+   "Jade Thompson",
+   "Sophie Ramirez"
+  ],
+  "n_works_personal": 38,
+  "n_works_incl_group": 46,
+  "first_year": 2024,
+  "last_year": 2040,
+  "genres": {
+   "Oceanus Folk": 44,
+   "Synthwave": 1,
+   "Americana": 1
+  },
+  "notable_works": 26,
+  "notoriety_years": {
+   "2030": 1
+  },
+  "n_collaborators": 47,
+  "top_collaborators": [
+   {
+    "name": "Maya Jensen",
+    "type": "Person",
+    "shared_works": 4,
+    "roles": [
+     "Composer"
+    ],
+    "genre": "Oceanus Folk"
+   },
+   {
+    "name": "Arlo Sterling",
+    "type": "Person",
+    "shared_works": 3,
+    "roles": [
+     "Lyricist"
+    ],
+    "genre": "Oceanus Folk"
+   },
+   {
+    "name": "Lyra Blaze",
+    "type": "Person",
+    "shared_works": 3,
+    "roles": [
+     "Composer"
+    ],
+    "genre": "Oceanus Folk"
+   },
+   {
+    "name": "Orion Cruz",
+    "type": "Person",
+    "shared_works": 3,
+    "roles": [
+     "Composer"
+    ],
+    "genre": "Oceanus Folk"
+   },
+   {
+    "name": "Elara May",
+    "type": "Person",
+    "shared_works": 3,
+    "roles": [
+     "Composer"
+    ],
+    "genre": "Oceanus Folk"
+   },
+   {
+    "name": "Cassian Rae",
+    "type": "Person",
+    "shared_works": 3,
+    "roles": [
+     "Composer"
+    ],
+    "genre": "Oceanus Folk"
+   },
+   {
+    "name": "The Brine Choir",
+    "type": "MusicalGroup",
+    "shared_works": 3,
+    "roles": [
+     "Performer"
+    ],
+    "genre": "Oceanus Folk"
+   },
+   {
+    "name": "Beatrice Albright",
+    "type": "Person",
+    "shared_works": 3,
+    "roles": [
+     "Lyricist",
+     "Performer"
+    ],
+    "genre": "Oceanus Folk"
+   },
+   {
+    "name": "Daniel O'Connell",
+    "type": "Person",
+    "shared_works": 3,
+    "roles": [
+     "Composer",
+     "Performer"
+    ],
+    "genre": "Oceanus Folk"
+   },
+   {
+    "name": "Lila \"Lilly\" Hartman",
+    "type": "Person",
+    "shared_works": 3,
+    "roles": [
+     "Composer"
+    ],
+    "genre": "Oceanus Folk"
+   },
+   {
+    "name": "Jade Thompson",
+    "type": "Person",
+    "shared_works": 3,
+    "roles": [
+     "Composer"
+    ],
+    "genre": "Oceanus Folk"
+   },
+   {
+    "name": "Sophie Ramirez",
+    "type": "Person",
+    "shared_works": 3,
+    "roles": [
+     "Lyricist"
+    ],
+    "genre": "Oceanus Folk"
+   },
+   {
+    "name": "Kai Reynolds",
+    "type": "Person",
+    "shared_works": 2,
+    "roles": [
+     "Lyricist",
+     "Performer"
+    ],
+    "genre": "Oceanus Folk"
+   },
+   {
+    "name": "Rusty Riggins",
+    "type": "Person",
+    "shared_works": 2,
+    "roles": [
+     "Lyricist"
+    ],
+    "genre": "Sea Shanties"
+   },
+   {
+    "name": "Ewan MacCrae",
+    "type": "Person",
+    "shared_works": 2,
+    "roles": [
+     "Lyricist"
+    ],
+    "genre": "Celtic Folk"
+   }
+  ],
+  "labels": {},
+  "collaborator_pairs": 80
+ },
+ "flows": {
+  "of_outward_total": 267,
+  "of_inward_total": 230,
+  "outward_by_genre": {
+   "Desert Rock": 51,
+   "Dream Pop": 44,
+   "Indie Folk": 43,
+   "Space Rock": 36,
+   "Synthwave": 18,
+   "Americana": 13,
+   "Jazz Surf Rock": 10,
+   "Doom Metal": 8,
+   "Synthpop": 6,
+   "Alternative Rock": 5,
+   "Post-Apocalyptic Folk": 5,
+   "Indie Rock": 5,
+   "Symphonic Metal": 3,
+   "Darkwave": 3,
+   "Speed Metal": 3,
+   "Emo/Pop Punk": 3,
+   "Southern Gothic Rock": 2,
+   "Psychedelic Rock": 2,
+   "Lo-Fi Electronica": 2,
+   "Indie Pop": 2,
+   "Avant-Garde Folk": 2,
+   "Blues Rock": 1
+  },
+  "inward_by_genre": {
+   "Indie Folk": 100,
+   "Synthwave": 19,
+   "Dream Pop": 15,
+   "Doom Metal": 14,
+   "Psychedelic Rock": 12,
+   "Synthpop": 10,
+   "Desert Rock": 9,
+   "Indie Rock": 8,
+   "Alternative Rock": 8,
+   "Americana": 5,
+   "Space Rock": 4,
+   "Blues Rock": 4,
+   "Celtic Folk": 4,
+   "Southern Gothic Rock": 4,
+   "Symphonic Metal": 3,
+   "Avant-Garde Folk": 2,
+   "Acoustic Folk": 2,
+   "Post-Apocalyptic Folk": 2,
+   "Jazz Surf Rock": 1,
+   "Sea Shanties": 1,
+   "Lo-Fi Electronica": 1,
+   "Indie Pop": 1,
+   "Emo/Pop Punk": 1
+  },
+  "outward_by_via": {
+   "Independent of her network": 253,
+   "Sailor Shift / Ivy Echos": 14
+  },
+  "outward_by_type": {
+   "InStyleOf": 83,
+   "InterpolatesFrom": 62,
+   "LyricalReferenceTo": 51,
+   "CoverOf": 43,
+   "DirectlySamples": 28
+  },
+  "outward_before_2023": 40,
+  "outward_2023_on": 190,
+  "outward_2023_on_by_via": {
+   "Independent of her network": 189,
+   "Sailor Shift / Ivy Echos": 1
+  },
+  "outward_genres_before_2023": 10,
+  "outward_genres_2023_on": 16,
+  "first_year_reached": {
+   "Doom Metal": 2007,
+   "Indie Folk": 2010,
+   "Americana": 2012,
+   "Alternative Rock": 2017,
+   "Dream Pop": 2017,
+   "Synthpop": 2017,
+   "Space Rock": 2018,
+   "Darkwave": 2019,
+   "Desert Rock": 2020,
+   "Synthwave": 2021,
+   "Jazz Surf Rock": 2023,
+   "Post-Apocalyptic Folk": 2024,
+   "Indie Rock": 2027,
+   "Symphonic Metal": 2028,
+   "Emo/Pop Punk": 2033,
+   "Speed Metal": 2034
+  },
+  "ss_share_of_outward_2023_on": 0.0053,
+  "network_share_of_outward_2023_on": 0.0053
+ },
+ "ss_influence": {
+  "influenced_edges": 21,
+  "influenced_genres": {
+   "Oceanus Folk": 7,
+   "Post-Apocalyptic Folk": 3,
+   "Lo-Fi Electronica": 2,
+   "Synthwave": 1,
+   "Alternative Rock": 1,
+   "Americana": 1,
+   "Indie Pop": 1,
+   "Jazz Surf Rock": 1,
+   "Emo/Pop Punk": 1,
+   "Avant-Garde Folk": 1,
+   "Indie Rock": 1,
+   "Synthpop": 1
+  },
+  "influenced_by_edges": 36,
+  "influenced_by_genres": {
+   "Oceanus Folk": 5,
+   "Indie Rock": 4,
+   "Synthwave": 3,
+   "Dream Pop": 3,
+   "Alternative Rock": 3,
+   "Americana": 2,
+   "Doom Metal": 2,
+   "Celtic Folk": 2,
+   "Psychedelic Rock": 2,
+   "Indie Folk": 2,
+   "Blues Rock": 1,
+   "Sea Shanties": 1,
+   "Lo-Fi Electronica": 1,
+   "Indie Pop": 1,
+   "Southern Gothic Rock": 1,
+   "Avant-Garde Folk": 1,
+   "Emo/Pop Punk": 1,
+   "Symphonic Metal": 1
+  },
+  "top_influences_on_her": {
+   "The Saltwater Weavers": 2,
+   "The Fiddle & The Fjord": 2,
+   "Twilight's Threshold": 1,
+   "Folklore's Heartbeat": 1,
+   "Reflejo Interior": 1,
+   "Weathered Miles": 1,
+   "The Long Way Home": 1,
+   "Ivy Echos": 1
+  },
+  "top_influenced_by_her": {
+   "Cassette Future": 2,
+   "The Hollow Monarchs": 2,
+   "Copper Canyon Ghosts": 2,
+   "Violet Engines": 1,
+   "Jasper Quinn": 1,
+   "Crimson Carriage": 1,
+   "Silver Veil": 1,
+   "The Phantom Operators": 1
+  }
+ }
+}

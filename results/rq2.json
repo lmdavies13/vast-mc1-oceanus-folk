@@ -1,0 +1,233 @@
+{
+ "population": 681,
+ "n_sustained": 304,
+ "n_viral": 217,
+ "comparison": [
+  {
+   "feature": "Collaborators (degree)",
+   "sustained_median": 13.0,
+   "sustained_mean": 16.167763157894736,
+   "viral_median": 5.0,
+   "viral_mean": 7.566820276497696,
+   "p_value": 1.182903633560365e-28
+  },
+  {
+   "feature": "Betweenness (bridging)",
+   "sustained_median": 0.00012554480406139998,
+   "sustained_mean": 0.0016198367837858168,
+   "viral_median": 0.0,
+   "viral_mean": 5.767117774573823e-06,
+   "p_value": 1.3234915256130572e-63
+  },
+  {
+   "feature": "Clustering (closed clique)",
+   "sustained_median": 0.37606837606837606,
+   "sustained_mean": 0.43958442730891956,
+   "viral_median": 1.0,
+   "viral_mean": 0.8978155485067928,
+   "p_value": 5.682654562738655e-51
+  },
+  {
+   "feature": "k-core (embeddedness)",
+   "sustained_median": 5.0,
+   "sustained_mean": 6.1875,
+   "viral_median": 5.0,
+   "viral_mean": 7.497695852534562,
+   "p_value": 0.003902080226919093
+  },
+  {
+   "feature": "Ties to major producers",
+   "sustained_median": 0.0,
+   "sustained_mean": 0.6151315789473685,
+   "viral_median": 0.0,
+   "viral_mean": 0.16589861751152074,
+   "p_value": 5.921453282326637e-14
+  },
+  {
+   "feature": "In main network component",
+   "sustained_median": 1.0,
+   "sustained_mean": 0.680921052631579,
+   "viral_median": 0.0,
+   "viral_mean": 0.391705069124424,
+   "p_value": 5.743611421752227e-11
+  }
+ ],
+ "share_btw_positive": {
+  "sustained": 0.8125,
+  "viral": 0.013824884792626729
+ },
+ "share_major_producer": {
+  "sustained": 0.45394736842105265,
+  "viral": 0.14746543778801843
+ },
+ "model": {
+  "cv_accuracy": 0.7849267399267399,
+  "baseline_accuracy": 0.5834932821497121,
+  "std_coefficients": {
+   "log_btw": 3.0405118771703057,
+   "clustering": -0.6763751135703652,
+   "major_producer_ties": 0.8980943504663518,
+   "in_main_component": -0.3296724599055817,
+   "degree": 0.19573346446120662
+  }
+ },
+ "n_candidates_pool": 69,
+ "top_candidates": [
+  {
+   "name": "Donna Ryan",
+   "type": "Person",
+   "n_works": 2,
+   "n_notable": 2,
+   "first_year": 2029,
+   "last_year": 2029,
+   "infl_received": 0,
+   "degree": 15,
+   "betweenness": 0.0007094452600973,
+   "clustering": 0.580952380952381,
+   "major_producer_ties": 0,
+   "in_main_component": 1,
+   "roles": "Performer",
+   "members": "Donna Ryan",
+   "sustained_prob": 0.9930843558283026,
+   "score": 0.9930843558283026
+  },
+  {
+   "name": "Ping Sun",
+   "type": "Person",
+   "n_works": 4,
+   "n_notable": 4,
+   "first_year": 2023,
+   "last_year": 2029,
+   "infl_received": 7,
+   "degree": 9,
+   "betweenness": 0.0010767116629485,
+   "clustering": 0.4722222222222222,
+   "major_producer_ties": 0,
+   "in_main_component": 1,
+   "roles": "Composer,Performer",
+   "members": "Ping Sun",
+   "sustained_prob": 0.9953305645719502,
+   "score": 0.905963727411554
+  },
+  {
+   "name": "Lei Jin",
+   "type": "Person",
+   "n_works": 5,
+   "n_notable": 4,
+   "first_year": 2021,
+   "last_year": 2032,
+   "infl_received": 10,
+   "degree": 12,
+   "betweenness": 0.0002184719282872,
+   "clustering": 0.4545454545454545,
+   "major_producer_ties": 0,
+   "in_main_component": 1,
+   "roles": "Lyricist,Performer,Producer",
+   "members": "Lei Jin",
+   "sustained_prob": 0.9870485161865665,
+   "score": 0.8823348541902423
+  },
+  {
+   "name": "Cosmic Drift",
+   "type": "MusicalGroup",
+   "n_works": 4,
+   "n_notable": 4,
+   "first_year": 2022,
+   "last_year": 2030,
+   "infl_received": 11,
+   "degree": 8,
+   "betweenness": 3.644528888505052e-05,
+   "clustering": 0.7142857142857143,
+   "major_producer_ties": 0,
+   "in_main_component": 1,
+   "roles": "Composer,Performer,Producer",
+   "members": "Xia Cui, Xiuying Li, Lei Shen, Cosmic Drift",
+   "sustained_prob": 0.926782783786702,
+   "score": 0.847841209266837
+  },
+  {
+   "name": "Ping Xu",
+   "type": "Person",
+   "n_works": 2,
+   "n_notable": 2,
+   "first_year": 2029,
+   "last_year": 2030,
+   "infl_received": 0,
+   "degree": 10,
+   "betweenness": 0.0036793680798924,
+   "clustering": 0.4666666666666667,
+   "major_producer_ties": 0,
+   "in_main_component": 1,
+   "roles": "Performer,Producer",
+   "members": "Ping Xu",
+   "sustained_prob": 0.9980626726770871,
+   "score": 0.7485470045078153
+  },
+  {
+   "name": "Yoko Fujita",
+   "type": "Person",
+   "n_works": 4,
+   "n_notable": 4,
+   "first_year": 2023,
+   "last_year": 2029,
+   "infl_received": 1,
+   "degree": 11,
+   "betweenness": 0.0015972594063966,
+   "clustering": 0.4181818181818181,
+   "major_producer_ties": 0,
+   "in_main_component": 1,
+   "roles": "Performer,Producer",
+   "members": "Yoko Fujita",
+   "sustained_prob": 0.9968903458297115,
+   "score": 0.7296998736455808
+  },
+  {
+   "name": "Guiying Tang",
+   "type": "Person",
+   "n_works": 2,
+   "n_notable": 2,
+   "first_year": 2024,
+   "last_year": 2029,
+   "infl_received": 2,
+   "degree": 11,
+   "betweenness": 0.0003159071499169,
+   "clustering": 0.5636363636363636,
+   "major_producer_ties": 0,
+   "in_main_component": 1,
+   "roles": "Performer",
+   "members": "Guiying Tang",
+   "sustained_prob": 0.987513486329967,
+   "score": 0.7026205530116995
+  },
+  {
+   "name": "Chao Sun",
+   "type": "Person",
+   "n_works": 2,
+   "n_notable": 2,
+   "first_year": 2029,
+   "last_year": 2029,
+   "infl_received": 0,
+   "degree": 6,
+   "betweenness": 3.4311931229773647e-06,
+   "clustering": 0.7333333333333333,
+   "major_producer_ties": 0,
+   "in_main_component": 1,
+   "roles": "Composer,Performer",
+   "members": "Chao Sun",
+   "sustained_prob": 0.6990025245388704,
+   "score": 0.6990025245388704
+  }
+ ],
+ "sailor_shift_profile": {
+  "degree": 48.0,
+  "betweenness": 3.4343783285833546e-05,
+  "clustering": 0.0842198581560283,
+  "core": 8.0,
+  "major_producer_ties": 0.0,
+  "in_main_component": 0.0,
+  "infl_received": 7.0,
+  "n_works": 38.0,
+  "span": 17.0,
+  "sustained_prob": 0.9932416382000312
+ }
+}

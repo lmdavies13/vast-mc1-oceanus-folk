@@ -46,22 +46,35 @@ def ego_subgraph(g: nx.MultiDiGraph, node_id: int, radius: int = 1) -> nx.MultiD
     return nx.ego_graph(g.to_undirected(as_view=True), node_id, radius=radius)
 
 
+INFLUENCE_EDGE_TYPES = {"InStyleOf", "InterpolatesFrom", "CoverOf", "LyricalReferenceTo", "DirectlySamples"}
+
+
 def genre_flow_edges(g: nx.MultiDiGraph, genre_attr: str = "genre") -> pd.DataFrame:
-    """Genre-to-genre influence edge counts, direction preserved, for the
-    Sankey/chord-diagram decision - group by (source genre, target genre).
-    Genre only lives on Song/Album nodes, so this naturally only counts the
-    derivative-work edges between songs/albums (InStyleOf, CoverOf, etc.) -
-    Person/MusicalGroup/RecordLabel nodes have no genre and get filtered out."""
+    """Genre-to-genre influence counts, oriented in the direction influence FLOWS.
+
+    In MC1 the influence edges point from the newer, borrowing work (source)
+    to the work it borrows from (target) - e.g. "Song A -InStyleOf-> Song B"
+    means B influenced A. So influence flows target -> source, and this
+    function reverses each edge: `from_genre` is the influencing genre,
+    `to_genre` the genre that borrowed from it. (An earlier version reported
+    the raw source -> target direction, which reads backwards.)
+
+    Only the five influence edge types are counted, and only between
+    Song/Album nodes (the only nodes with a genre). For flows that also
+    include artist/band nodes, see scripts/rq1_diffusion.py.
+    """
     rows = []
     for u, v, attrs in g.edges(data=True):
-        u_genre = g.nodes[u].get(genre_attr)
-        v_genre = g.nodes[v].get(genre_attr)
-        if u_genre and v_genre and u_genre != v_genre:
-            rows.append({"source_genre": u_genre, "target_genre": v_genre, "edge_type": attrs.get("Edge Type")})
+        if attrs.get("Edge Type") not in INFLUENCE_EDGE_TYPES:
+            continue
+        borrower_genre = g.nodes[u].get(genre_attr)
+        original_genre = g.nodes[v].get(genre_attr)
+        if borrower_genre and original_genre and borrower_genre != original_genre:
+            rows.append({"from_genre": original_genre, "to_genre": borrower_genre, "edge_type": attrs.get("Edge Type")})
     df = pd.DataFrame(rows)
     if df.empty:
         return df
-    return df.groupby(["source_genre", "target_genre"]).size().reset_index(name="count").sort_values("count", ascending=False)
+    return df.groupby(["from_genre", "to_genre"]).size().reset_index(name="count").sort_values("count", ascending=False)
 
 
 def node_table(g: nx.MultiDiGraph) -> pd.DataFrame:

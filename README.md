@@ -70,9 +70,30 @@ with the same command rather than committing it):
   the ego-network visual belongs in Gephi (or a from-scratch D3/NetworkX
   plot), not a Tableau sheet.
 
+## Analysis (RQ1 / RQ2)
+
+Results, methods and caveats are written up in **[FINDINGS.md](FINDINGS.md)**.
+Slide-ready charts are in `figures/`.
+
+| Script | What it does | Writes |
+|---|---|---|
+| `scripts/analysis_common.py` | Tabular loader (pandas) + edge-type groups | — |
+| `scripts/rq1_diffusion.py` | Sailor Shift's ego network (incl. Ivy Echos + collaborators via shared works), direction-corrected genre flows, attribution of Oceanus Folk's outward spread | `results/rq1.json`, `results/*.csv`, `output/sailor_shift_collab_ego.graphml` (Gephi), `output/influence_edges_resolved.csv` |
+| `scripts/rq2_features.py` | Per-artist career + collaboration-network metrics (degree, betweenness, clustering, k-core, major-producer ties) | `results/artist_features.csv` (Tableau-ready) |
+| `scripts/rq2_trajectories.py` | Sustained vs viral groups, significance tests, logistic model, next-star candidates | `results/rq2.json`, `results/rq2_groups.csv`, `results/of_candidates.csv` |
+| `scripts/make_figures.py` | 7 PNG figures | `figures/` |
+
+Run them in that order after `pip install -r requirements.txt`.
+
+**Influence direction:** influence edges point borrower -> original, so
+influence flows target -> source. `genre_flow_edges()` now returns
+`from_genre` (influencer) -> `to_genre` (borrower), restricted to the five
+influence edge types. Before this change it returned the raw edge direction,
+which read backwards.
+
 ## Open items
 
-- Sankey vs. chord diagram for the genre-flow visualization — meeting notes
+- Sankey vs. chord diagram for the genre-flow visualization (`figures/02_genre_influence_flows.png` is a diverging bar stand-in; `results/genre_flow_matrix.csv` feeds either) — meeting notes
   leaned Sankey (direction matters), final proposal deck said chord. Pick
   one before building it.
 - Confirm work split (who owns ego-network vs. genre-diffusion vs.
